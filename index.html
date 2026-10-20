@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bestiário Sobrenatural</title>
+    <meta name="description" content="Catálogo simples de criaturas sobrenaturais do folclore e da mitologia.">
+</head>
+
+<body data-page="catalogo">
+    <header>
+        <div class="wrap"><a class="logo" href="index.html">Bestiário Sobrenatural</a></div>
+    </header>
+    <main>
+        <div class="wrap">
+            <section class="hero">
+                <h1>Explore criaturas sobrenaturais</h1>
+                <p class="sub">Um catálogo simples de seres do folclore e da mitologia de várias culturas.</p>
+                <form id="form" class="search" role="search"><input id="busca" type="search"
+                        aria-label="Buscar criatura pelo nome" placeholder="Buscar criatura pelo nome..."
+                        autocomplete="off"><button type="submit">Buscar</button></form>
+                <div id="chips" class="chips" role="group" aria-label="Categorias"></div>
+            </section>
+            <p id="contador" class="count" aria-live="polite"></p>
+            <div id="grade" class="grid"></div>
+            <div id="vazio" class="empty" hidden>
+                <div class="ico" aria-hidden="true">?</div>
+                <h2>Nenhuma criatura encontrada</h2>
+                <p class="sub">Não encontramos resultados. Verifique a grafia ou tente outra categoria.</p><button
+                    id="limpar" class="btn">Limpar busca</button>
+            </div>
+        </div>
+    </main>
+    <footer>Bestiário Sobrenatural · Projeto de Interação Humano-Computador</footer>
+    <script src="app.js"></script>
+</body>
+
+</html>

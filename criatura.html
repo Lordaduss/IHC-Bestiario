@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <title>Criatura – Bestiário Sobrenatural</title>
+</head>
+
+<body data-page="detalhe">
+    <header>
+        <div class="wrap"><a class="logo" href="index.html">Bestiário Sobrenatural</a></div>
+    </header>
+    <main>
+        <div class="wrap">
+            <a class="back" href="index.html">← Voltar ao catálogo</a>
+            <article id="ficha">
+                <div class="detail"><img id="foto" class="big" alt="">
+                    <div class="info">
+                        <h1 id="nome"></h1>
+                        <div id="meta" class="meta"></div>
+                        <p id="descricao"></p>
+                        <dl id="attrs"></dl>
+                    </div>
+                </div>
+                <h2 class="rel">Criaturas relacionadas</h2>
+                <div id="relacionadas" class="grid"></div>
+            </article>
+            <div id="naoachou" class="empty" hidden>
+                <div class="ico" aria-hidden="true">?</div>
+                <h2>Criatura não encontrada</h2>
+                <p class="sub">O endereço pode estar incorreto. Volte ao catálogo para escolher uma criatura.</p><a
+                    class="btn" href="index.html">Ir para o catálogo</a>
+            </div>
+        </div>
+    </main>
+    <footer>Bestiário Sobrenatural · Projeto de Interação Humano-Computador</footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
